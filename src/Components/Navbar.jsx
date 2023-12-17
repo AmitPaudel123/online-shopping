@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" bg-blue-500 ">
+      <div className=" bg-blue-500 z-[9999]">
         <div className=" flex mx-16 py-3 text-white justify-between">
           <div className=" flex gap-4">
             <div>
@@ -198,7 +198,7 @@ const Navbar = () => {
             {/* clothing content */}
             {clothing && (
               <div
-                className=" flex md:gap-8 xl:gap-32 mt-4 md:ml-[-6rem] xl:ml-[-4.5rem] justify-evenly absolute shadow-sm shadow-black text-black bg-white rounded-sm px-10 py-4"
+                className=" flex md:gap-8 xl:gap-32 mt-4 md:ml-[-6rem] xl:ml-[-4.5rem] justify-evenly absolute z-[99999] shadow-sm shadow-black text-black bg-white rounded-sm px-10 py-4"
                 onMouseOver={() => {
                   setClothing(true);
                 }}
@@ -276,7 +276,7 @@ const Navbar = () => {
               setElectronic(false);
             }}
           >
-            <div className="bg-red-400 text-white absolute px-3 py-1 ml-10 mt-[-1.7rem] text-xs rounded-sm">
+            <div className="bg-red-400 text-white absolute  px-3 py-1 ml-10 mt-[-1.7rem] text-xs rounded-sm">
               Hot
             </div>
             Electronics
@@ -289,7 +289,7 @@ const Navbar = () => {
                 onMouseLeave={() => {
                   setElectronic(false);
                 }}
-                className="  flex md:gap-8 xl:gap-24 mt-4 ml-[-11rem] justify-evenly items-start absolute shadow-sm shadow-black text-black bg-white rounded-sm px-10 py-4"
+                className="  flex md:gap-8 xl:gap-24 mt-4 ml-[-11rem] justify-evenly items-start absolute z-[9999] shadow-sm shadow-black text-black bg-white rounded-sm px-10 py-4"
               >
                 <div className=" flex flex-col gap-3">
                   <div className=" text-lg hover:text-blue-400">Laptops</div>
@@ -399,7 +399,7 @@ const Navbar = () => {
             {/* pages content */}
             {pages && (
               <div
-                className=" flex flex-col gap-2 mt-4 md:ml-[-5rem] xl:ml-0 absolute shadow-sm shadow-black py-2 px-5 bg-white text-black text-sm"
+                className=" flex flex-col gap-2 mt-4 md:ml-[-5rem] xl:ml-0 absolute z-[9999] shadow-sm shadow-black py-2 px-5 bg-white text-black text-sm"
                 onMouseOver={() => {
                   setPages(true);
                 }}
@@ -557,7 +557,7 @@ const Navbar = () => {
                 Electronics
                 {/* electronic content */}
                 {electronic && (
-                  <div className="  flex flex-col space-y-5 items-start text-black bg-white rounded-sm px-10  py-4">
+                  <div className=" absolute flex flex-col space-y-5 items-start text-black bg-white rounded-sm px-10  py-4">
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">Laptops</div>
                       <div className=" text-sm hover:cursor-pointer">
