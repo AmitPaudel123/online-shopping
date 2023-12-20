@@ -13,7 +13,7 @@ import sports from "../Images/icons8-football-50.png";
 const Categories = () => {
   return (
     <>
-      <div className=" bg-yellow-300 rounded-md shadow-sm shadow-black w-[90%] mx-auto md:mx-0 md:w-fit xl:w-[15%]">
+      <div className=" bg-yellow-300 rounded-md shadow-sm shadow-slate-400 w-[90%] mx-auto md:mx-0 md:w-fit xl:w-[15%]">
         <div className="  text-xl px-4 py-2">
           <span className=" text-2xl text-black"> &#9776;</span> Categories
         </div>

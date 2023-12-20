@@ -57,6 +57,50 @@ const SamplePrevArrow = (props) => {
   );
 };
 
+// for smaller devices
+const SampleNextArrow1 = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        marginRight: "1.8rem",
+        backgroundColor: "gray",
+        borderRadius: "5px",
+        width: "1.5rem",
+        height: "1.5rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
+//for smaller devices
+const SamplePrevArrow1 = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        backgroundColor: "gray",
+        borderRadius: "5px",
+        width: "1.5rem",
+        height: "1.5rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: "1.8rem",
+      }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
 const NewProducts = () => {
   const settings = {
     slidesToShow: 5,
@@ -68,7 +112,7 @@ const NewProducts = () => {
   };
 
   const settings2 = {
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
     cssEase: "linear",
@@ -77,19 +121,19 @@ const NewProducts = () => {
   };
 
   const settings3 = {
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
     cssEase: "linear",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow1 />,
+    prevArrow: <SamplePrevArrow1 />,
   };
   return (
     <>
-      <div className="hidden md:block w-[75%] shadow-sm shadow-black rounded-sm">
-        <div className=" flex items-center py-2 justify-between">
+      <div className=" w-[90%] mx-auto md:mx-0 md:w-[65%] lg:w-[75%] shadow-sm shadow-slate-400 rounded-sm">
+        <div className=" flex flex-col md:flex-row items-center py-2 justify-between">
           <div className=" text-2xl font-bold ml-4">New Products</div>
-          <div className=" flex gap-5 mr-20">
+          <div className=" flex gap-5 md:mr-3 lg:mr-20">
             <div className=" cursor-pointer">All</div>
             <div className=" cursor-pointer">Clothing</div>
             <div className=" cursor-pointer">Electronics</div>
@@ -106,7 +150,11 @@ const NewProducts = () => {
                   New
                 </div>
 
-                <img src={img1} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img1}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -129,7 +177,11 @@ const NewProducts = () => {
                   Hot
                 </div>
 
-                <img src={img2} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img2}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -152,7 +204,11 @@ const NewProducts = () => {
                   New
                 </div>
 
-                <img src={img3} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img3}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -175,7 +231,11 @@ const NewProducts = () => {
                   Sale
                 </div>
 
-                <img src={img4} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img4}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -198,7 +258,11 @@ const NewProducts = () => {
                   New
                 </div>
 
-                <img src={img5} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img5}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -221,7 +285,11 @@ const NewProducts = () => {
                   Sale
                 </div>
 
-                <img src={img6} alt="" className=" h-52 w-52 mx-auto" />
+                <img
+                  src={img6}
+                  alt=""
+                  className=" w-[95%] mx-auto rounded-md"
+                />
                 <div className=" my-3 ml-3">
                   <p>Floral Print Buttoned</p>
                   <p className=" text-blue-500">
@@ -385,7 +453,7 @@ const NewProducts = () => {
         </div>
 
         {/* for smaller devices, mobilephones */}
-        <div className=" hidden md:block lg:hidden">
+        <div className="  md:block lg:hidden">
           <Slider {...settings3}>
             <div>
               <div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// import Link from
 //imorting images for navbar
 import logo from "../Images/logo1.png";
 import cartpic from "../Images/cart.png";
@@ -13,10 +13,10 @@ import acc from "../Images/icons8-person-24.png";
 import login from "../Images/icons8-padlock-50.png";
 import cartlogo from "../Images/icons8-love-26.png";
 import checkout from "../Images/icons8-correct-64.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [usd, setUsd] = useState(false);
   const [english, setEnglish] = useState(false);
-  const [catagories, setCategories] = useState(false);
   const [cart, setCart] = useState(false);
   const [clothing, setClothing] = useState(false);
   const [electronic, setElectronic] = useState(false);
@@ -112,8 +112,13 @@ const Navbar = () => {
               <img src={checkout} alt="" className="md:hidden w-5" />
             </div>
             <div className=" cursor-pointer">
-              <p className=" hidden md:block">Login</p>
-              <img src={login} alt="" className=" md:hidden w-5" />
+              <p className=" hidden md:block">
+                <Link to="/login">Login</Link>
+              </p>
+              <Link to="/login">
+                {" "}
+                <img src={login} alt="" className=" md:hidden w-5" />
+              </Link>
             </div>
           </div>
         </div>
@@ -135,7 +140,7 @@ const Navbar = () => {
 
           {/* cart section */}
           <div
-            className=" flex gap-4 cursor-pointer w-fit"
+            className=" flex gap-4 cursor-pointer w-fit z-[9999]"
             onClick={() => {
               !cart ? setCart(true) : setCart(false);
             }}
@@ -169,7 +174,7 @@ const Navbar = () => {
                       <span className=" font-bold text-blue-500">$600</span>
                     </p>
                     <button className=" bg-blue-500 rounded-md text-white w-full py-2 mt-3">
-                      CHECKOUT
+                      <Link to="/checkout">CHECKOUT</Link>
                     </button>
                   </div>
                 </div>
@@ -184,7 +189,9 @@ const Navbar = () => {
       <div className="bg-blue-500  text-white py-2 md:py-0 flex flex-col md:flex-row justify-between lg:text-xl">
         {/* for tab and other larger screen */}
         <div className=" hidden md:flex gap-5 ml-14">
-          <div className=" hover:cursor-pointer py-4 xl:px-2">Home</div>
+          <div className=" hover:cursor-pointer py-4 xl:px-2">
+            <Link to="/">Home</Link>
+          </div>
           <div
             className=" hover:cursor-pointer py-4 xl:px-2 hover:bg-white hover:text-slate-700 hover:rounded-sm"
             onMouseOver={() => {
@@ -380,7 +387,7 @@ const Navbar = () => {
             <div className="bg-yellow-400 text-white absolute px-3 py-1 ml-20 mt-[-1.7rem] text-xs rounded-sm">
               New
             </div>
-            Health & Beauty
+            <Link to="/health"> Health & Beauty</Link>
           </div>
           <div className=" hover:cursor-pointer py-4 xl:px-2">Watches</div>
           <div className=" hover:cursor-pointer py-4 xl:px-2">Jwellery</div>
@@ -407,9 +414,14 @@ const Navbar = () => {
                   setPages(false);
                 }}
               >
-                <div>Home</div>
+                <div>
+                  <Link to="/">Home</Link>{" "}
+                </div>
                 <hr />
-                <div>Category</div> <hr />
+                <div>
+                  <Link to="/category">Category</Link>
+                </div>{" "}
+                <hr />
                 <div>Detail</div> <hr />
                 <div>Shopping Cart Summary</div> <hr />
                 <div>Checkout</div> <hr />
@@ -449,7 +461,9 @@ const Navbar = () => {
 
           {menu && (
             <div className=" flex flex-col gap-2 mx-8 mt-5 text-xl">
-              <div>Home</div>
+              <div>
+                <Link to="/">Home</Link>
+              </div>
               <div
                 className=" hover:cursor-pointer w-[90%] hover:bg-white hover:text-slate-700 hover:rounded-sm"
                 onClick={() => {
@@ -658,7 +672,10 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <div className=" hover:cursor-pointer">Health & Beauty</div>
+              <div className=" hover:cursor-pointer">
+                {" "}
+                <Link to="/health">Health & Beauty</Link>{" "}
+              </div>
               <div className=" hover:cursor-pointer xl:px-2">Watches</div>
               <div className=" hover:cursor-pointer xl:px-2">Jwellery</div>
               <div className=" hover:cursor-pointer xl:px-2">Shoes</div>
