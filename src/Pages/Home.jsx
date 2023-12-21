@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       {" "}
-      <div className=" flex flex-col-reverse md:flex-row justify-center  mt-8 gap-2 xl:gap-4">
+      <div className=" flex flex-col-reverse md:flex-row justify-center  mt-8 gap-6 xl:gap-4">
         <Categories />
         <ImgSlider />
       </div>

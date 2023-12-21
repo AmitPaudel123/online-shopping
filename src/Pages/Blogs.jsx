@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import blog1 from "../Images/Blog/blog_big_01.jpg";
 import blog2 from "../Images/Blog/blog_big_02.jpg";
 import blog3 from "../Images/Blog/blog_big_03.jpg";
+import { Link } from "react-router-dom";
 
 //arrow customization for slider
 //for larger screen
@@ -140,7 +141,7 @@ const Blogs = () => {
               <img src={blog1} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Lorem ipsum dolor sit amet.
+                  <Link to="blogpost"> Lorem ipsum dolor sit amet.</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Elyse Perry | Dec-6 2023
@@ -153,7 +154,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dolore explicabo alias distinctio{" "}
+                  <Link to="/blogpost"> Dolore explicabo alias distinctio</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-12 2023
@@ -166,7 +167,7 @@ const Blogs = () => {
               <img src={blog3} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Exercitationem veritatis eum ad{" "}
+                  <Link to="/blogpost"> Exercitationem veritatis eum ad</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-20 2023
@@ -179,7 +180,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dignissimos impedit quam enim{" "}
+                  <Link to="/blogpost"> Dignissimos impedit quam enim</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Mitchel Starc | Nov-6 2023
@@ -198,7 +199,7 @@ const Blogs = () => {
               <img src={blog1} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Lorem ipsum dolor sit amet.
+                  <Link to="blogpost"> Lorem ipsum dolor sit amet.</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Elyse Perry | Dec-6 2023
@@ -211,7 +212,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dolore explicabo alias distinctio{" "}
+                  <Link to="/blogpost"> Dolore explicabo alias distinctio</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-12 2023
@@ -224,7 +225,7 @@ const Blogs = () => {
               <img src={blog3} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Exercitationem veritatis eum ad{" "}
+                  <Link to="/blogpost"> Exercitationem veritatis eum ad</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-20 2023
@@ -237,7 +238,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dignissimos impedit quam enim{" "}
+                  <Link to="/blogpost"> Dignissimos impedit quam enim</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Mitchel Starc | Nov-6 2023
@@ -256,7 +257,7 @@ const Blogs = () => {
               <img src={blog1} alt="" className=" w-[98%] rounded-md mx-auto" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Lorem ipsum dolor sit amet.
+                  <Link to="blogpost"> Lorem ipsum dolor sit amet.</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Elyse Perry | Dec-6 2023
@@ -269,7 +270,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md mx-auto" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dolore explicabo alias distinctio{" "}
+                  <Link to="/blogpost"> Dolore explicabo alias distinctio</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-12 2023
@@ -282,7 +283,7 @@ const Blogs = () => {
               <img src={blog3} alt="" className=" w-[98%] rounded-md mx-auto" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Exercitationem veritatis eum ad{" "}
+                  <Link to="/blogpost"> Exercitationem veritatis eum ad</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Steave Smith | Dec-20 2023
@@ -295,7 +296,7 @@ const Blogs = () => {
               <img src={blog2} alt="" className=" w-[98%] rounded-md" />
               <div>
                 <p className=" font-bold text-2xl hover:text-blue-600 my-2">
-                  Dignissimos impedit quam enim{" "}
+                  <Link to="/blogpost"> Dignissimos impedit quam enim</Link>
                 </p>
                 <p className=" text-slate-600 my-2">
                   By Mitchel Starc | Nov-6 2023

@@ -87,10 +87,9 @@ const SamplePrevArrow1 = (props) => {
       className={className}
       style={{
         ...style,
-        // position: "absolute",
         backgroundColor: "gray",
-        // top: "-1.6rem",
         borderRadius: "5px",
+        zIndex: "9999",
         width: "1.5rem",
         height: "1.5rem",
         display: "flex",

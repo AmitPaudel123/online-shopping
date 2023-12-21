@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import Link from
+import { Link } from "react-router-dom";
+
 //imorting images for navbar
 import logo from "../Images/logo1.png";
 import cartpic from "../Images/cart.png";
@@ -13,7 +14,6 @@ import acc from "../Images/icons8-person-24.png";
 import login from "../Images/icons8-padlock-50.png";
 import cartlogo from "../Images/icons8-love-26.png";
 import checkout from "../Images/icons8-correct-64.png";
-import { Link } from "react-router-dom";
 const Navbar = () => {
   const [usd, setUsd] = useState(false);
   const [english, setEnglish] = useState(false);
@@ -419,7 +419,7 @@ const Navbar = () => {
                 </div>
                 <hr />
                 <div>
-                  <Link to="/category">Category</Link>
+                  <Link to="/health">Category</Link>
                 </div>{" "}
                 <hr />
                 <div>Detail</div> <hr />
@@ -428,7 +428,10 @@ const Navbar = () => {
                 <div>Blog</div> <hr />
                 <div>Blog Detail</div> <hr />
                 <div>Contact</div> <hr />
-                <div>Sign In</div> <hr />
+                <div>
+                  <Link to="/login">Sign In</Link>
+                </div>{" "}
+                <hr />
                 <div>Wishlist</div> <hr />
                 <div>Terms and Condition</div> <hr />
                 <div>Track Orders</div> <hr />
@@ -461,7 +464,7 @@ const Navbar = () => {
 
           {menu && (
             <div className=" flex flex-col gap-2 mx-8 mt-5 text-xl">
-              <div>
+              <div onClick={() => setMenu(false)}>
                 <Link to="/">Home</Link>
               </div>
               <div
@@ -571,7 +574,7 @@ const Navbar = () => {
                 Electronics
                 {/* electronic content */}
                 {electronic && (
-                  <div className=" absolute flex flex-col space-y-5 items-start text-black bg-white rounded-sm px-10  py-4">
+                  <div className=" md:absolute flex flex-col space-y-5 items-start text-black bg-white rounded-sm px-10  py-4">
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">Laptops</div>
                       <div className=" text-sm hover:cursor-pointer">
@@ -672,7 +675,10 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <div className=" hover:cursor-pointer">
+              <div
+                className=" hover:cursor-pointer"
+                onClick={() => setMenu(false)}
+              >
                 {" "}
                 <Link to="/health">Health & Beauty</Link>{" "}
               </div>
@@ -693,7 +699,7 @@ const Navbar = () => {
                 {/* pages content */}
                 {pages && (
                   <div
-                    className=" flex flex-col gap-2 mt-4 md:ml-[-5rem] xl:ml-0 absolute shadow-sm shadow-black py-2 px-5 bg-white text-black text-sm"
+                    className=" flex flex-col gap-2 mt-4 md:ml-[-5rem] xl:ml-0 md:absolute shadow-sm shadow-black py-2 px-5 bg-white text-black text-sm"
                     onMouseOver={() => {
                       setPages(true);
                     }}
@@ -703,14 +709,24 @@ const Navbar = () => {
                   >
                     <div>Home</div>
                     <hr />
-                    <div>Category</div> <hr />
+                    <div>
+                      <Link to="/health">Category</Link>
+                    </div>{" "}
+                    <hr />
                     <div>Detail</div> <hr />
                     <div>Shopping Cart Summary</div> <hr />
-                    <div>Checkout</div> <hr />
+                    <div>
+                      {" "}
+                      <Link to="/checkout">Checkout</Link>
+                    </div>{" "}
+                    <hr />
                     <div>Blog</div> <hr />
                     <div>Blog Detail</div> <hr />
                     <div>Contact</div> <hr />
-                    <div>Sign In</div> <hr />
+                    <div>
+                      <Link to="/login">Sign In</Link>
+                    </div>{" "}
+                    <hr />
                     <div>Wishlist</div> <hr />
                     <div>Terms and Condition</div> <hr />
                     <div>Track Orders</div> <hr />
