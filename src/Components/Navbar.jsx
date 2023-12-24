@@ -468,7 +468,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </div>
               <div
-                className=" hover:cursor-pointer w-[90%] hover:bg-white hover:text-slate-700 hover:rounded-sm"
+                className=" cursor-pointer w-[90%] hover:bg-white hover:text-slate-700 hover:rounded-sm"
                 onClick={() => {
                   setElectronic(false);
                   !clothing ? setClothing(true) : setClothing(false);
@@ -565,7 +565,7 @@ const Navbar = () => {
                 )}
               </div>
               <div
-                className="  hover:bg-white hover:text-slate-700 hover:rounded-sm "
+                className="  hover:bg-white cursor-pointer hover:text-slate-700 hover:rounded-sm "
                 onClick={() => {
                   setClothing(false);
                   !electronic ? setElectronic(true) : setElectronic(false);
@@ -577,20 +577,12 @@ const Navbar = () => {
                   <div className=" md:absolute flex flex-col space-y-5 items-start text-black bg-white rounded-sm px-10  py-4">
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">Laptops</div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Gaming
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        LaptopSkins
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">Apple</div>
-                      <div className=" text-sm hover:cursor-pointer">Dell</div>
-                      <div className=" text-sm hover:cursor-pointer ">
-                        Lenovo
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Adapters
-                      </div>
+                      <div className=" text-sm cursor-pointer">Gaming</div>
+                      <div className=" text-sm cursor-pointer">LaptopSkins</div>
+                      <div className=" text-sm cursor-pointer">Apple</div>
+                      <div className=" text-sm cursor-pointer">Dell</div>
+                      <div className=" text-sm cursor-pointer ">Lenovo</div>
+                      <div className=" text-sm cursor-pointer">Adapters</div>
                       <div className=" text-sm hover:cursor-pointer">
                         Batteries
                       </div>
@@ -600,99 +592,63 @@ const Navbar = () => {
                     </div>
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">Desktops</div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Headphones
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
+                      <div className=" text-sm cursor-pointer">Headphones</div>
+                      <div className=" text-sm cursor-pointer">
                         Routers&Modems
                       </div>
-                      <div className=" text-sm hover:cursor-pointer">
+                      <div className=" text-sm cursor-pointer">
                         CPUs,Processors
                       </div>
-                      <div className=" text-sm hover:cursor-pointer">
+                      <div className=" text-sm cursor-pointer">
                         PCGamingStore
                       </div>
-                      <div className=" text-sm hover:cursor-pointer">
+                      <div className=" text-sm cursor-pointer">
                         GraphicsCards
                       </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Components
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Webcam
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Memory
-                      </div>
+                      <div className=" text-sm cursor-pointer">Components</div>
+                      <div className=" text-sm cursor-pointer">Webcam</div>
+                      <div className=" text-sm cursor-pointer">Memory</div>
                     </div>
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">Cameras</div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Accessories
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Binoculars
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Telescopes
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Camcorders
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Digital
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        FilmCameras
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
+                      <div className=" text-sm cursor-pointer">Accessories</div>
+                      <div className=" text-sm cursor-pointer">Binoculars</div>
+                      <div className=" text-sm cursor-pointer">Telescopes</div>
+                      <div className=" text-sm cursor-pointer">Camcorders</div>
+                      <div className=" text-sm cursor-pointer">Digital</div>
+                      <div className=" text-sm cursor-pointer">FilmCameras</div>
+                      <div className=" text-sm cursor-pointer">
                         Surveillance
                       </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Tripods
-                      </div>
+                      <div className=" text-sm cursor-pointer">Tripods</div>
                     </div>
 
                     <div className=" flex flex-col gap-3">
                       <div className=" text-lg font-bold">MobilePhones</div>
-                      <div className=" text-sm hover:cursor-pointer">Apple</div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Samsung
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Lenovo
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Motorola
-                      </div>
-                      <div className=" text-sm hover:cursor-pointer">LeEco</div>
-                      <div className=" text-sm hover:cursor-pointer">Asus</div>
-                      <div className=" text-sm hover:cursor-pointer">Acer</div>
-                      <div className=" text-sm hover:cursor-pointer">
-                        Headphones
-                      </div>
+                      <div className=" text-sm cursor-pointer">Apple</div>
+                      <div className=" text-sm cursor-pointer">Samsung</div>
+                      <div className=" text-sm cursor-pointer">Lenovo</div>
+                      <div className=" text-sm cursor-pointer">Motorola</div>
+                      <div className=" text-sm cursor-pointer">LeEco</div>
+                      <div className=" text-sm cursor-pointer">Asus</div>
+                      <div className=" text-sm cursor-pointer">Acer</div>
+                      <div className=" text-sm cursor-pointer">Headphones</div>
                     </div>
                   </div>
                 )}
               </div>
-              <div
-                className=" hover:cursor-pointer"
-                onClick={() => setMenu(false)}
-              >
+              <div className=" cursor-pointer" onClick={() => setMenu(false)}>
                 {" "}
                 <Link to="/health">Health & Beauty</Link>{" "}
               </div>
-              <div className=" hover:cursor-pointer xl:px-2">Watches</div>
-              <div className=" hover:cursor-pointer xl:px-2">Jwellery</div>
-              <div className=" hover:cursor-pointer xl:px-2">Shoes</div>
-              <div className=" hover:cursor-pointer xl:px-2">Kids & Girls</div>
+              <div className=" cursor-pointer xl:px-2">Watches</div>
+              <div className=" cursor-pointer xl:px-2">Jwellery</div>
+              <div className=" cursor-pointer xl:px-2">Shoes</div>
+              <div className=" cursor-pointer xl:px-2">Kids & Girls</div>
               <div
-                className=" hover:cursor-pointer hover:bg-white hover:text-slate-700 hover:rounded-sm xl:px-2"
-                onMouseOver={() => {
-                  setPages(true);
-                }}
-                onMouseLeave={() => {
-                  setPages(false);
+                className=" cursor-pointer hover:bg-white hover:text-slate-700 hover:rounded-sm xl:px-2"
+                onClick={() => {
+                  !pages ? setPages(true) : setPages(false);
                 }}
               >
                 Pages

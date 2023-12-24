@@ -53,7 +53,7 @@ const ImgSlider = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className=" w-[90%] mx-auto md:mx-0 md:w-[70%] lg:w-[75%]">
+    <div className=" w-[99%] mx-auto md:mx-0 md:w-[70%] lg:w-[75%]">
       <Slider {...settings}>
         <div>
           <div className=" absolute md:ml-[5%] lg:ml-[15%] md:mt-[5%] lg:mt-[10%]">

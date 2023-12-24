@@ -59,7 +59,7 @@ const SignIn = () => {
           <input
             type="submit"
             value="LOGIN"
-            className=" bg-blue-500 hover:bg-blue-600 py-2 px-5 rounded-md text-white my-3"
+            className=" bg-blue-500 hover:bg-blue-600 py-2 cursor-pointer px-5 rounded-md text-white my-3"
           />
         </div>
 
@@ -129,7 +129,7 @@ const SignIn = () => {
           <input
             type="submit"
             value="SIGN UP"
-            className=" bg-blue-500 hover:bg-blue-600 py-2 px-5 rounded-md text-white my-3"
+            className=" bg-blue-500 hover:bg-blue-600 cursor-pointer py-2 px-5 rounded-md text-white my-3"
           />
         </div>
       </div>

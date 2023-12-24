@@ -83,14 +83,14 @@ const BlogItem = () => {
   const [tab2Color, setTab2Color] = useState("cursor-pointer");
 
   const handlePopularPOst = () => {
-    setTab1(blogpic2);
-    setTab2(blogpic1);
+    setTab1(blogpic1);
+    setTab2(blogpic2);
     setTab1Color("cursor-pointer text-blue-600");
     setTab2Color("cursor-pointer");
   };
   const handleRecentPost = () => {
-    setTab1(blogpic1);
-    setTab2(blogpic2);
+    setTab1(blogpic2);
+    setTab2(blogpic1);
     setTab2Color("cursor-pointer text-blue-600");
     setTab1Color("cursor-pointer");
   };
@@ -118,7 +118,7 @@ const BlogItem = () => {
   return (
     <>
       <div className=" flex flex-col md:flex-row justify-center gap-6 md:gap-3 lg:gap-6 my-6">
-        <div className=" w-[90%] mx-auto md:mx-0 md:w-[70%] ">
+        <div className=" w-[90%] mx-auto md:mx-0 md:w-[65%] ">
           {blogDetail.map((data, index) => {
             return (
               <div
