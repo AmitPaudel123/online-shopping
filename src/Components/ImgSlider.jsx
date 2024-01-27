@@ -40,7 +40,6 @@ const SamplePrevArrow = (props) => {
 
 const ImgSlider = () => {
   const settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -56,7 +55,7 @@ const ImgSlider = () => {
     <div className=" w-[99%] mx-auto md:mx-0 md:w-[70%] lg:w-[75%]">
       <Slider {...settings}>
         <div>
-          <div className=" absolute md:ml-[5%] lg:ml-[15%] md:mt-[5%] lg:mt-[10%]">
+          <div className=" absolute ml-5 md:ml-[5%] lg:ml-[15%] md:mt-[5%] lg:mt-[10%]">
             <p className=" md:text-xl lg:text-2xl text-slate-600">
               SPRING 2023
             </p>
@@ -66,14 +65,14 @@ const ImgSlider = () => {
             <p className=" text-xl">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
-            <button className="  lg:text-lg text-white md:mt-2 lg:mt-4 bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-md">
+            <button className=" text-sm  lg:text-lg text-white md:mt-2 lg:mt-4 bg-blue-500 hover:bg-blue-600 px-5 py-1 lg:py-2 rounded-md">
               SHOP NOW
             </button>
           </div>
           <img src={slider1} alt="" />
         </div>
         <div>
-          <div className=" absolute md:ml-[5%] lg:ml-[15%] md:mt-[5%] lg:mt-[10%]">
+          <div className=" absolute ml-5 md:ml-[5%] lg:ml-[15%] md:mt-[5%] lg:mt-[10%]">
             <p className=" md:text-xl lg:text-2xl text-slate-600">TOP BRANDS</p>
             <p className=" md:text-2xl lg:text-5xl font-bold lg:my-2">
               New Collections{" "}
@@ -81,7 +80,7 @@ const ImgSlider = () => {
             <p className=" text-xl">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
-            <button className="  lg:text-lg text-white md:mt-2 lg:mt-4 bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-md">
+            <button className=" text-sm  lg:text-lg text-white md:mt-2 lg:mt-4 bg-blue-500 hover:bg-blue-600 px-5 py-1 lg:py-2 rounded-md">
               SHOP NOW
             </button>
           </div>

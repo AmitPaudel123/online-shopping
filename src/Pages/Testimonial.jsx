@@ -21,7 +21,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className=" shadow-sm shadow-slate-400 rounded-sm w-[90%] mx-auto h-fit md:h-full md:mx-0 md:w-[25%] xl:w-[15%] px-5 py-10">
+      <div className=" shadow-sm shadow-slate-400 rounded-sm w-[95%] mx-auto h-fit md:h-full md:mx-0 md:w-[25%] xl:w-[15%] px-5 py-10">
         <Slider {...settings}>
           <div className=" w-[30%]">
             <img

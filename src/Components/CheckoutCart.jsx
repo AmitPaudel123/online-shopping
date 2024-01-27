@@ -11,7 +11,7 @@ const CheckoutCart = () => {
     <>
       <div className=" my-5 flex flex-col md:flex-row justify-center gap-6 ">
         {/* checkout 1*/}
-        <div className=" w-[90%] mx-auto md:mx-0 md:w-[65%] lg:w-[70%] flex flex-col gap-4">
+        <div className=" w-[95%] mx-auto md:mx-0 md:w-[65%] lg:w-[70%] flex flex-col gap-4">
           <div className=" p-5 rounded-md shadow-sm shadow-slate-400 ">
             <div
               className=" md:text-xl font-semibold bg-slate-200 py-2 cursor-pointer"
@@ -212,7 +212,7 @@ const CheckoutCart = () => {
           </div>
         </div>
         {/* checkout 2 */}
-        <div className=" w-[90%] mx-auto md:mx-0  md:w-[25%] lg:w-[20%] shadow-sm shadow-slate-400 rounded-sm p-3 h-fit">
+        <div className=" w-[95%] mx-auto md:mx-0  md:w-[25%] lg:w-[20%] shadow-sm shadow-slate-400 rounded-sm p-3 h-fit">
           {" "}
           <div className=" font-semibold text-xl">Your Checkout Progress</div>
           <hr className=" my-2" />

@@ -4,7 +4,7 @@ import google from "../Images/google.png";
 const SignIn = () => {
   return (
     <>
-      <div className=" bg-white rounded-sm shadow-sm shadow-slate-400 mx-10 my-5 p-5 flex flex-col md:flex-row gap-4">
+      <div className=" bg-white rounded-sm shadow-sm shadow-slate-400 mx-3 md:mx-10 my-5 p-5 flex flex-col md:flex-row gap-4">
         {/* sign In */}
         <div className=" w-[70%] md:w-[48%] px-3">
           <p className=" text-xl font-semibold">Sign in</p>
@@ -25,7 +25,7 @@ const SignIn = () => {
               </button>
             </div>
           </div>
-          <div className=" flex flex-col ">
+          <div className=" grid ">
             <label htmlFor="email">
               Email Address <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -36,7 +36,7 @@ const SignIn = () => {
               className=" border-[1px] border-slate-400 px-4 py-2 rounded-sm"
             />
           </div>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="password">
               Password <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -69,7 +69,7 @@ const SignIn = () => {
           <hr className=" my-3" />
 
           <p className=" text-green-600">Create your new account.</p>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="name">
               Name <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -80,7 +80,7 @@ const SignIn = () => {
               className=" border-[1px] border-slate-400 px-4 py-2 rounded-sm"
             />
           </div>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="email">
               Email Address <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -91,7 +91,7 @@ const SignIn = () => {
               className=" border-[1px] border-slate-400 px-4 py-2 rounded-sm"
             />
           </div>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="phone">
               Phone Number <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -104,7 +104,7 @@ const SignIn = () => {
               className=" border-[1px] border-slate-400 px-4 py-2 rounded-sm"
             />
           </div>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="password1">
               Password <span className=" text-red-700 text-lg">*</span>
             </label>
@@ -115,7 +115,7 @@ const SignIn = () => {
               className=" border-[1px] border-slate-400 px-4 py-2 rounded-sm"
             />
           </div>
-          <div className=" flex flex-col my-3">
+          <div className=" grid my-3">
             <label htmlFor="password2">
               Confirm Password <span className=" text-red-700 text-lg">*</span>
             </label>

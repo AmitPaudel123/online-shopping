@@ -118,7 +118,7 @@ const BlogItem = () => {
   return (
     <>
       <div className=" flex flex-col md:flex-row justify-center gap-6 md:gap-3 lg:gap-6 my-6">
-        <div className=" w-[90%] mx-auto md:mx-0 md:w-[65%] ">
+        <div className=" w-[95%] mx-auto md:mx-0 md:w-[65%] ">
           {blogDetail.map((data, index) => {
             return (
               <div
@@ -152,7 +152,7 @@ const BlogItem = () => {
             );
           })}
         </div>
-        <div className=" w-[90%] mx-auto md:mx-0 md:w-[30%] lg:md-[20%] ">
+        <div className=" w-[95%] mx-auto md:mx-0 md:w-[30%] lg:md-[20%] ">
           <div className=" flex w-full">
             <input
               type="search"

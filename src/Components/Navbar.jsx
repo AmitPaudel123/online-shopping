@@ -186,7 +186,7 @@ const Navbar = () => {
       <hr className=" bg-slate-600 h-[1px]" />
 
       {/* navbar pages */}
-      <div className="bg-blue-500  text-white py-2 md:py-0 flex flex-col md:flex-row justify-between lg:text-xl">
+      <div className="bg-blue-500   text-white py-2 md:py-0 flex flex-col md:flex-row justify-between lg:text-xl">
         {/* for tab and other larger screen */}
         <div className=" hidden md:flex gap-5 ml-14">
           <div className=" hover:cursor-pointer py-4 xl:px-2">
@@ -451,9 +451,9 @@ const Navbar = () => {
         </div>
 
         {/* for smaller screen */}
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <button
-            className=" md:hidden text-2xl mx-8 px-4 py-1 bg-slate-700 rounded-md"
+            className=" md:hidden text-2xl mx-8 px-4 py-1 bg-white text-slate-700 rounded-md"
             onClick={() => {
               !menu ? setMenu(true) : setMenu(false);
             }}

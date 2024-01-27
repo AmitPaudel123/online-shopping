@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" bg-slate-800 text-slate-300 px-7 py-10 md:px-0 flex flex-col  md:flex-row flex-wrap gap-4 justify-around">
+        <div className=" bg-slate-800 text-slate-300 px-7 py-10 md:px-0 grid grid-flow-row md:grid-flow-col md:grid-rows-2 md:justify-around lg:grid-rows-1 gap-4">
           <div className=" flex flex-col gap-2">
             <div className=" flex gap-2 items-center">
               <div className=" bg-yellow-400 p-2 w-fit rounded-full">
